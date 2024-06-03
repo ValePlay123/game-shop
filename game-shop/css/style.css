@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background-color: #f2f2f2;
+}
+/*parte del contenedor 1 - parte izq, der*/
+.cont-1{
+    width: 100%;
+    height: 60px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+}
+.part-izq{
+    display: flex;
+    gap: 10px;
+    margin: 13px 0 0 20px;
+    height: 30px;
+    font-size: 14px;
+}
+.rojo{
+    color: red;
+}
+.part-der{
+    height: 30px;
+    width: 350px;
+    margin: 16px 0 0 0;
+    font-size: 15px;
+}
+.nave a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+.carrito{
+    width: 20px;
+    margin-left: 40px;
+}
+/*fin de la parte del contenedor 1*/
+/*parte dos del contendor*/
+.cont-2{
+    background-image: url(../img/fondo.jfif);
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+h2{
+    font-size: 35px;
+    color: white;
+}
+.rectangulo{
+    background-color:#D01418;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+/*fin de la parte del contenedor 2*/
+/*comienzo del contenedor de las figuritas - part superior*/
+.part-sup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 ;
+}
+.sub-tit{
+    font-size: 28px;
+    color: black;
+    margin-bottom: 10px;
+}
+.cont-fig{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+.fig{
+    background-color: white;
+    width: 290px;
+    height: 290px;
+}
+.juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 190px;
+    border-bottom: 2px solid #f2f2f2; /* Borde superior con un color gris muy claro */
+}
+.img-fig{
+    width: 100px;
+}
+.precio{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 10px;
+    color: black;
+}
+.precio1{
+    font-size: 20px;
+}
+ .precio2{
+    font-size: 15px;
+}
+ .precio3{
+    font-size: 10px;
+    color: #619D00;
+}
+/*fin de los contenedores de figurita*/
+/*parte inferior del contenedor 3*/
+.part-inf{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0 95px 0;
+}
+.cont-je{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.juego-je{
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 270px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    overflow: hidden; /*Oculta cualquier parte de la imagen que sobresalga del div*/
+    background-color: red;
+}
+.juego-je:nth-of-type(1) {
+    background-image: url(../img/juego-izq.jfif);
+}
+
+.juego-je:nth-of-type(2) {
+    background-image: url(../img/juego-der.jfif);
+}
+.prod-e{
+    margin-right: 10px;
+}
+/*parte del cont 4*/
+.cont-4{
+    background-color:#222222;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.part-inf-izq{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.jois-2{
+    width: 25px;
+}
+.part-inf-der{
+    color: white;
+    margin-right: 30px;
+}
+.tres-redes{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+.redes{
+    width: 16px;
+    height: 19px;
+}
+/*pie de pagina*/
+.cont-5{
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+/*request*/
+@media (max-width:450px) {
+    .cont-2{
+        background-image: url(../img/fondo.jfif);
+        background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+        background-position: left center; /* Muestra la parte izquierda de la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */;
+    }
+    h2{
+        width: 300px;
+        height: 200px;
+    }
+    .cont-fig{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont-je{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .cont-4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .part-inf-izq,.part-inf-der{
+        margin: 0;
+    }
+}
